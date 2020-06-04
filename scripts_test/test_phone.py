@@ -6,7 +6,10 @@ from Page.PageObj import PageObj
 from Base.Read_data import get_yml_data
 import pytest,allure
 
-sys.path.append(os.getcwd())
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+
 def get_test_data():
     list_data = []
     test_data = get_yml_data("add_user.yml").get("test_data")

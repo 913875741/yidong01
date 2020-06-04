@@ -2,7 +2,10 @@ import os,sys
 
 from selenium.webdriver.support.wait import WebDriverWait
 
-sys.path.append(os.getcwd())
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+
 class Base(object):
     def __init__(self, driver):
         self.driver = driver
@@ -54,6 +57,9 @@ class Base(object):
             return False
     @classmethod
     def get_root_path(cls):
-        cur_path = os.getcwd()
-        root_path = cur_path[:cur_path.find("yidong01") + len("yidong01")]
-        return root_path
+        # cur_path = os.getcwd()
+        # root_path = cur_path[:cur_path.find("yidong01") + len("yidong01")]
+        # return root_path
+        curPath = os.path.abspath(os.path.dirname(__file__))
+        rootPath = os.path.split(curPath)[0]
+        return rootPath
