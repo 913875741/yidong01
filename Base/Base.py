@@ -1,8 +1,8 @@
-import os
+import os,sys
 
 from selenium.webdriver.support.wait import WebDriverWait
 
-
+sys.path.append(os.getcwd())
 class Base(object):
     def __init__(self, driver):
         self.driver = driver
