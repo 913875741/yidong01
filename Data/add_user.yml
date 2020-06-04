@@ -1,0 +1,42 @@
+test_data:
+  Search_data1:
+    name: "刘备"
+    phonenum: 13122223333
+    exp: "刘备"
+  Search_data2:
+    name: "关羽"
+    phonenum: ""
+    exp: "关羽"
+  Search_data3:
+    name: ""
+    phonenum: 13122223334
+    exp: "1 312-222-3334"
+  Search_data4:
+    name: ""
+    phonenum: ""
+    exp: ""
+#  Search_data3:
+#    name:
+#      - data1
+#      - data2
+#  Search_data4:
+#    flag1: False
+#    flag2: True
+#  Search_data5:
+#    name: ~
+#  Search_data6:
+#    value1: 12
+#    value2: 12.034
+#  Search_data7:
+#    data: &imp
+#      value: 666
+#    name:
+#      value1: "haha"
+#      <<: *imp
+#    name2:
+#      my_value:
+#        value1: "haha"
+#        <<: *imp
+#  Search_data8:
+#    data1: {"name":"刘备","age":"55"}
+#    data2: [1,2,"ha"]
