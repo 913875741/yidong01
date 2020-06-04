@@ -10,6 +10,7 @@ def get_test_data():
         list_data.append((i,test_data.get(i).get("name"),test_data.get(i).get("phonenum"),test_data.get(i).get("exp")))
     return list_data
 
+
 class Test_phone(object):
     def setup_class(self):
         self.driver = init_driver()
